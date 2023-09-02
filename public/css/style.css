@@ -1,0 +1,173 @@
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    outline: none;
+}
+body 
+{
+    height:100vh;
+    width: 100%;
+    background-color: rgb(21, 67, 194);
+}
+
+/* Nav bar content */
+nav{
+    width: 100%;
+    height: 60px;
+    padding:0 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    font-weight: 800;
+    font-size: 30px;
+    color:rgb(25, 27, 33)
+}
+nav .navBtn a{
+    text-decoration: none;
+    padding:8px 20px;
+    background-color: rgba(21, 67, 194, 0.7);
+    color:white;
+    border-radius: 20px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+nav .navBtn a:hover{
+    background-color: green;
+}
+
+/* Form Content */
+.container, .container_fluid
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 30px;
+    width:450px;
+}
+
+.container .title
+{
+    font-size: 32px;
+    color: rgba(21, 67, 194, 0.8);
+    font-weight: 600;
+    text-align: center;
+}
+
+.container form .data
+{
+    margin: 40px 0px;
+    height:45px;
+    width: 100%;
+}
+
+.container form .data .error_msg
+{
+    text-align: end;
+}
+.container form .data .error_msg p
+{
+    color: red;
+    margin-top: 5px;
+}
+
+form .data label{
+    font-size: 18px;
+}
+form .data label .mandatory_data
+{
+    font-size: 15px;
+    color: red;
+}
+form .data input{
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    border: 1px solid rgb(89, 88, 88);
+    font-size: 16px;
+}
+form .data input:focus{
+    border-color: rgb(21, 67, 194);
+    border-bottom-width: 2px;
+}
+form .forgot_pass
+{
+    margin-top: -10px;
+}
+form .forgot_pass a
+{
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(21, 67, 194);
+}
+form .forgot_pass a:hover
+{
+    text-decoration: underline;
+}
+form .formBtn
+{
+    height: 45px;
+    width: 100%;
+    margin: 25px 0px;
+}
+form .formBtn button
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(21, 67, 194);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 400px;
+    cursor: pointer;
+}
+form .formBtn button:hover
+{
+    background-color: rgb(15, 57, 174);
+}
+form .form_link
+{
+    text-align: center;
+}
+form .form_link a
+{
+    text-decoration: none;
+    color: rgb(21, 67, 194);
+}
+form .form_link a:hover
+{
+    text-decoration: underline;
+}
+/* Home content */
+.container_fluid
+{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_fluid h2, .container_fluid h3 {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 5px 0px;
+}
+
+/* profile content */
+.container_fluid .title{
+    color: rgb(21, 67, 194);
+    font-size: 20px;
+    font-weight: 500;
+}
+.container_fluid img{
+    width: 250px;
+    margin: 10px 0px;
+}
+

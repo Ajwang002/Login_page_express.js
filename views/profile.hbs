@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {{> headSection}}
+
+    <body>
+        <!-- Navigation Section -->
+        {{> navbar}}
+        <div class="container_fluid">
+            <div class="title" >User Profile</div>
+            <img src="image/progile.png" alt="profile image" id="profile_image"/>
+            <h2>Name        : {{user.name}}</h2>
+            <h2>Email       : {{user.email}}</h2>
+            <h2>Phone Number: {{user.phone_number}}</h2>
+        </div>
+    </body>
+</html>

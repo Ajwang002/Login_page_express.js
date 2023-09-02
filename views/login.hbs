@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    {{> headSection}}
+    <body>
+        <!-- Navigation Section -->
+        {{> navbar}}
+        <!-- Login Form Section -->
+        <div class="container">
+            <div class="title">User Login</div>
+            <form action="/auth/login" method="post">
+                <div class="data">
+                    <label for="email">
+                        Email <span class="mandatory_data">*</span>
+                    </label>
+                    <input type="email" name="email" placeholder="Enter your email" id="email">
+                    {{#if email_msg}} 
+                        <div class="error_msg">
+                            <p>{{email_msg}}</p> 
+                        </div>
+                    {{/if}}
+                </div>
+                <div class="data">
+                    <label for="password">
+                        Password <span class="mandatory_data">*</span>
+                    </label>
+                    <input type="password" name="password" placeholder="Enter your password" id="password">
+                    {{#if passwd_msg}} 
+                        <div class="error_msg">
+                            <p>{{passwd_msg}}</p> 
+                        </div>
+                    {{/if}}
+                </div>
+                <div class="forgot_pass">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="formBtn">
+                    <button type="submit">Login</button>
+                </div>
+                <div class="form_link">
+                    Not a Member? <a href="/register">Register Now</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

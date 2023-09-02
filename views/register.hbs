@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    {{> headSection}}
+    <body>
+        <!-- Navigation Section -->
+        {{> navbar}}
+        <!-- Login Form Section -->
+        <div class="container">
+            <div class="title">Registration</div>
+            <form action="/auth/register" method="post">
+                <div class="data">
+                    <label for="name">
+                        Name <span class="mandatory_data">*</span>
+                    </label>
+                    <input type="text" name="name" placeholder="Enter your name" id="name">
+                </div>
+                <div class="data">
+                    <label for="email">
+                        Email <span class="mandatory_data">*</span>
+                    </label>
+                    <input type="email" name="email" placeholder="Enter your email" id="email">
+                    {{#if email_msg}} 
+                        <div class="error_msg">
+                            <p>{{email_msg}}</p> 
+                        </div>
+                    {{/if}}
+                </div>
+                <div class="data">
+                    <label for="phone_number">
+                        Mobile Number <span class="mandatory_data">*</span>
+                    </label>
+                    <input type="number" name="phone_number" placeholder="Enter your mobile Number" id="phone_number">
+                </div>
+                <div class="data">
+                    <label for="password">
+                        Password <span class="mandatory_data">*</span>
+                    </label>
+                    <input type="password" name="password" placeholder="Enter your password" id="password">
+                    {{#if passwd_msg}} 
+                        <div class="error_msg">
+                            <p>{{passwd_msg}}</p> 
+                        </div>
+                    {{/if}}
+                </div>
+                <div class="data">
+                    <label for="confirm_password">
+                        Confirm Password <span class="mandatory_data">*</span>
+                    </label>
+                    <input type="password" name="confirm_password" placeholder="ReEnter your password" id="confirm_password">
+                </div>
+                <div class="formBtn">
+                    <button type="submit">Register</button>
+                </div>
+                <div class="form_link">
+                    Already a Member? <a href="/login">Login Now</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
